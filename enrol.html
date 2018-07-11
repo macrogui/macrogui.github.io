@@ -15,12 +15,15 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
     $('select').material_select();
-
+$(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
   });
 		</script>
+		<h3 class="header blue-text center">注册</h3>
+	</br>
 		<div class="container">
 		<div class="row">
-    <form class="col s12">
+    <form action="home.html" class="col s12">
       <div class="row">
         <div class="input-field col s6">
         	<i class="material-icons prefix">account_circle</i>
@@ -66,13 +69,14 @@
   </div>
       	
     </div>
-
-	 <button class="btn waves-effect waves-light" type="submit" name="action">提交
+	<button class="btn waves-effect waves-light" type="submit" name="action">提交
     	<i class="material-icons right">done</i>
  	 </button>
+
     </form>
   </div>
 			
 		</div>
+
 	</body>
 </html>
