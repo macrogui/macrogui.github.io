@@ -16,13 +16,53 @@
 			$(document).ready(function(){
       $('.carousel').carousel();
     });
+    $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
 		</script>
-		  <div class="carousel">
+		<a href="home.html" style="width: 50px;height: 50px;"><img src="img/back.jpg" style="margin-top: 27px; margin-left: 20px;"/></a>
+	<h2 style="margin-left: 30px;display: inline-block;">我的钱包</h2>
+
+		  <div class="carousel" style="margin-bottom: -50px; margin-top: -60px;">
     <a class="carousel-item" href="#one!"><img src="img/bg.jpg"></a>
     <a class="carousel-item" href="#two!"><img src="img/bg.jpg"></a>
     <a class="carousel-item" href="#three!"><img src="img/bg.jpg"></a>
     <a class="carousel-item" href="#four!"><img src="img/bg.jpg"></a>
     <a class="carousel-item" href="#five!"><img src="img/bg.jpg"></a>
   </div>
+    <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header waves-effect waves-light"><i class="material-icons"style="font-size: 2.8rem;">view_list</i>
+    <h5 style="margin-left: 20px;">我的余额 ￥0</h5>
+</div>	
+      <div class="collapsible-body"><p>
+      	  <form action="#">
+    <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">支付宝钱包</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test2" />
+      <label for="test2">微信钱包</label>
+    </p>
+    <button class="btn waves-effect waves-light" type="submit" name="action">前往支付
+    <i class="material-icons right">send</i>
+  </button>
+  </form>
+      </p></div>
+    </li>
+    <li>
+      <div class="collapsible-header waves-effect waves-light"><i class="material-icons"style="font-size: 2.8rem;">view_list</i>
+      <h5 style="margin-left: 20px;">支付宝绑定</h5>
+      </div>
+      <div class="collapsible-body"><a href="https://www.alipay.com/"><h4>进入支付宝</h4></a></div>
+    </li>
+    <li>
+      <div class="collapsible-header waves-effect waves-light	"><i class="material-icons"style="font-size: 2.8rem;">view_list</i>
+      	<h5 style="margin-left: 20px;">申诉通道</h5>
+      </div>
+      <div class="collapsible-body"><p>请拨打我们的客服热线 66666666</p></div>
+    </li>
+  </ul>
 	</body>
 </html>
