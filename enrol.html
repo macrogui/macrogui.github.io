@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>enrol</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><</-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
@@ -11,6 +11,12 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	</head>
+	<style type="text/css">
+		html{
+				background: url(img/bg.jpg);
+				background-position: -50px -50px;
+		}
+	</style>
 	<body>
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -19,11 +25,20 @@ $(document).ready(function(){
     $('.tooltipped').tooltip({delay: 50});
   });
 		</script>
+				  <nav>
+    <div class="nav-wrapper blue z-depth-1" style="padding-left: 20px;">
+      <div class="col s12">
+        <a href="#" class="breadcrumb">一</a>
+        <a href="confirm.html" class="breadcrumb">二</a>
+      </div>
+    </div>
+  </nav>
 		<h3 class="header blue-text center">注册</h3>
 	</br>
 		<div class="container">
+			
 		<div class="row">
-    <form action="home.html" class="col s12">
+    <form action="confirm.html" class="col s12">
       <div class="row">
         <div class="input-field col s6">
         	<i class="material-icons prefix">account_circle</i>
@@ -39,10 +54,8 @@ $(document).ready(function(){
       <div class="row">
         <div class="input-field col s12">
           <input id="last_name" type="text" class="validate">
-          <label for="last_name">爱好</label>
+          <label for="last_name">学号</label>
         </div>
-      </div>
-      <div class="row">
         <div class="input-field col s12">
           <input id="password" type="password" class="validate">
           <label for="password">密码</label>
@@ -50,26 +63,16 @@ $(document).ready(function(){
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" placeholder="@sspu.edu.com" class="validate">
           <label for="email">邮件</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
-          <input id="date" type="date" class="validate">
-        </div>
-      </div>
-      <div class="row">
       <div class="input-field col s12">
-    <select>
-      <option value="" disabled selected>选择你的职业</option>
-      <option value="1">teacher</option>
-      <option value="2">student</option>
-    </select>
   </div>
       	
     </div>
-	<button class="btn waves-effect waves-light" type="submit" name="action">提交
+	<button class="btn waves-effect waves-light" type="submit" name="action">下一步
     	<i class="material-icons right">done</i>
  	 </button>
 
