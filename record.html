@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>使用情况</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-flash.min.css" />            
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	</head>
+	<style type="text/css">
+		html,body{
+			padding: 10px;
+		}
+		@keyframes bgmove{
+			from{background-position: left top;}
+			to{background-position: right -100px;}
+		}
+		body{
+			background: url(img/bg1.jpg) no-repeat;
+			width: 100%;
+			height: 100%;
+			margin: auto;
+			animation: bgmove 3s;
+			animation-iteration-count: 1;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+		}
+		.container{
+			background: transparent;
+		}
+	</style>
+	<body>
+		<div class="container z-depth-3">
+			<div class="row white-text"> <h4 class="col push-s3">信用记录</h4></div>
+			<br />
+			<br />
+			<div class="row">
+				<div class="col s6 push-s1">
+					
+				<div class="center white-text left"> <h6>2018/7/12</h6></div>
+				</div>
+			</div>
+			<div class="row z-depth-1">
+				
+				<div class="col s6 push-s5 pink-text">
+					<p class="right">骑行时间 : 4min</p>
+					<p class="right">骑行距离 : 1km</p>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="col s6 push-s1">
+					
+				<div class="center white-text left"> <h6>2018/7/13</h6></div>
+				</div>
+			</div>
+			<div class="row z-depth-1">
+				
+				<div class="col s6 push-s5 pink-text">
+					<p class="right">骑行时间 : 10min</p>
+					<p class="right">骑行距离 : 2km</p>
+				</div>
+				
+			</div>
+
+		</div>
+	</body>
+</html>
